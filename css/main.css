@@ -1,14 +1,20 @@
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
 }
 
 body {  
-    margin: 0;
+    size: auto;
+    margin: 0 auto;
     font-family: 'Poppins';
+    background-image: url(/assets/layered-waves-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-bottom: 30px;
 }
 
 .wrapper {
-    max-width: 75%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -18,7 +24,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
 }
 
 nav {
@@ -47,6 +53,12 @@ nav a.active:before {
     height: 1px;
     border-bottom: 2px solid black;
     bottom: -6px;
+}
+
+.menu-icon{
+    display: flex;
+    margin: 0 auto;
+    padding-left: 15rem;
 }
 
 /* Hero Section */
@@ -123,13 +135,13 @@ h1 {
 .card1 {
     grid-area: left;
     background-image: url(../assets/headphones\ black.jpeg);
+    position: relative;
 }
+
 .card2 {
-    grid-area: right;
     background-image: url(../assets/ring\ light.jpeg);
 }
 .card3 {
-    grid-area: bottom;
     background-image: url(../assets/apple\ earphones.jpeg);
 }
 
@@ -159,18 +171,50 @@ p.product-price {
     font-size: 1.8rem;
 }
 
-footer {
-    background-image: url(../assets/layered-waves-haikei-footer.svg);
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social-links h4 {
+    display: grid;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+}
+.social-links {
+    display: flex-grid;
+    margin: 0 auto;
+    gap: 20px;
+    justify-content: space-between;
+
 }
 
-@media screen {
+.footer-links {
+    display: flex;
+    position: end;
+    height: 6rem; width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    color: black;
+    padding-top: 5rem;
+    padding-bottom: 0;
+    
+}
+.link-list {
+    display: flex-row;
+    margin: 0 auto;
+    font-family: 'Poppins';
+    font-size: 1.4rem;
+    color: black;
+    text-decoration: none;
+    gap: 1em;
+    align-items: right;
     
 
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+  
 }
