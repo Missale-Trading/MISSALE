@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-    width: 100%; /*min (100% - 30px, 840px);*/
+    width: min (100% - 30px, 840px);
     min-height: 100vh;
     padding-left: 8%;
     padding-right: 8%;
@@ -86,6 +86,7 @@ main {
 }
 
 .right-col {
+    margin-top: 3rem;
     flex-grow: 1;
 }
 
